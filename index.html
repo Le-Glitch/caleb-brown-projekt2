@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
-</head>
-<body>
-    <h1>"Realistic" Cookie Clicker</h1>
-    <div><span class="cookieCounter">0</span> cookies</div>
-    <div>per second: <span class="cps">0</span></div>
+  </head>
+  <body>
+    <div class="cookieContainer">
+      <div class="textMargin">
+      <h1>Cookie Clicker</h1>
+      <div><span class="cookieCounter">0</span> cookies</div>
+      <div>per second: <span class="cps">0</span></div>
+      </div>
+      <button class="cookieButton">
+        <img
+          src="/cookieButton.png"
+          alt="Cookie that you click to gain cookies"
+          id="cookieImg"
+        />
+      </button>
+    </div>
 
-    <button class="cookieButton">Click Here!</button>
+    <div class="upgradeContainer">
+      <div class="upgrades">
+        <button class="clickerButton">
+          <h2>Clicker</h2>
+          <div>Price: <span class="clickerPrice">15</span></div>
+          <div>Amount: <span class="clickerAmount">0</span></div>
+        </button>
+      </div>
 
-    <h2>Clicker</h2>
-    <div>Price: <span class="clickerPrice">15</span></div>
-    <button class="clickerButton">Buy!</button>
-</body>
+      <div class="upgrades">
+        <button class="grandmaButton">
+          <h2>Grandma</h2>
+          <div>Price: <span class="grandmaPrice">100</span></div>
+          <div>Amount: <span class="grandmaAmount">0</span></div>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
