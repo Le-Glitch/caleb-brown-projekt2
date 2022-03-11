@@ -40,7 +40,7 @@ body {
   border: solid black 2px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  transition: ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .upgradeContainer button:hover
