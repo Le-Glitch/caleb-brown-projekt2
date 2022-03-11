@@ -34,11 +34,38 @@ body {
   border-radius: 20px;
 }
 
+.upgradeContainer button
+{
+  border-radius: 25px;
+  border: solid black 2px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.upgradeContainer button:active
+{
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .upgrades {
   display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 125px;
+}
+
+.upgradeText 
+{
+  display: flex;
   flex-direction: column;
-  width: 200px;
-  height: 50px;
+  margin-left: 50px;
+}
+
+.upgradeImg
+{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-right: 2px solid;
 }
 
 .cookieButton {
