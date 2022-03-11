@@ -69,11 +69,36 @@ function GrandmaBuy() {
   }
 }
 
+let mineAmount = 0,
+  mineCost = 1100,
+  mineCPS = 8;
 
+let mineButton = document.querySelector(".mineButton"),
+  mineCounter = document.querySelector(".mineAmount"),
+  minePrice = document.querySelector(".minePrice");
+
+  mineButton.addEventListener("click", MineBuy);
+
+function MineBuy() {
+  if (cookieAmount >= mineCost) {
+    mineAmount++;
+    cpsAmount += mineCPS;
+    cookieAmount -= mineCost;
+
+    mineCost = Math.round(
+      (mineCost * upgradeMultiplier) ^ (mineAmount + 1)
+    );
+
+    cps.innerHTML = parseFloat(cpsAmount.toFixed(1));
+    cookieCounter.innerHTML = Math.floor(cookieAmount);
+    mineCounter.innerHTML = mineAmount;
+    minePrice.innerHTML = mineCost;
+  }
+}
 
 let factoryAmount = 0,
-  factoryCost = 1100,
-  factoryCPS = 8;
+  factoryCost = 12000,
+  factoryCPS = 47;
 
 let factoryButton = document.querySelector(".factoryButton"),
   factoryCounter = document.querySelector(".factoryAmount"),
