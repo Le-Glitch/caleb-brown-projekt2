@@ -40,9 +40,10 @@ body {
   border: solid black 2px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.5);
+  transition: ease-in-out;
 }
 
-.upgradeContainer button:active
+.upgradeContainer button:hover
 {
   background-color: rgba(255, 255, 255, 1);
 }
